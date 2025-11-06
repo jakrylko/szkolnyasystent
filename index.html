@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Szkolny Asystent</title>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ MathJax do ładnego renderowania wzorów -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <h1>📘 AI Szkolny Asystent</h1>
+
+  <div class="container">
+    <textarea id="prompt" placeholder="Wpisz swoje zadanie szkolne..."></textarea>
+    <br />
+    <button onclick="generateAnswers()">Rozwiąż</button>
+  </div>
+
+
+  <div id="answers"></div>
+  <div id="bestAnswer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
