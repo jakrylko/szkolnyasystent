@@ -2,7 +2,7 @@ const questionInput = document.getElementById("prompt");
 const answersDiv = document.getElementById("answers");
 const bestDiv = document.getElementById("bestAnswer");
 
-const OPENROUTER_KEY = "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";
+const OPENROUTER_KEY = "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";
 
 async function renderMarkdownWithMath(element, markdownText) {
   element.innerHTML = marked.parse(markdownText);  // renderujemy Markdown
@@ -108,3 +108,4 @@ const evaluator = await fetch("https://openrouter.ai/api/v1/chat/completions", {
 
   if (window.MathJax) MathJax.typesetPromise();
 };
+
