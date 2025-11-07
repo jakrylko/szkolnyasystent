@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <title>AI Szkolny Asystent</title>
 
-
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
   <link rel="stylesheet" href="style.css" />
 
   <!-- ✅ MathJax do ładnego renderowania wzorów -->
@@ -25,9 +23,9 @@
     <textarea id="prompt" placeholder="Wpisz swoje zadanie szkolne..."></textarea>
     <br />
     <button onclick="generateAnswers()">Rozwiąż</button>
-    
   </div>
-  <div class="options">
+
+<div class="options">
   <label for="length">Długość odpowiedzi:</label>
   <select id="length">
     <option value="krótka">Krótka ✏️</option>
@@ -39,6 +37,21 @@
     <option value="wytłumaczenie">🧠 Wytłumaczenie zagadnienia</option>
     <option value="notatka">📓 Notatka</option>
     <option value="rozwiązanie">✅ Rozwiązanie zadania</option>
+  </select>
+
+
+  <label for="answerLang">Język odpowiedzi:</label>
+  <select id="answerLang">
+    <option value="Polish">🇵🇱 Polski</option>
+    <option value="English">🇬🇧 Angielski</option>
+    <option value="German">🇩🇪 Niemiecki</option>
+    <option value="French">🇫🇷 Francuski</option>
+    <option value="Ukrainian">🇺🇦 Ukraiński</option>
+    <option value="Italian">🇮🇹 Włoski</option>
+  </select>
+</div>
+
+
   </select>
 </div>
 
