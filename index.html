@@ -25,7 +25,23 @@
     <textarea id="prompt" placeholder="Wpisz swoje zadanie szkolne..."></textarea>
     <br />
     <button onclick="generateAnswers()">Rozwiąż</button>
+    
   </div>
+  <div class="options">
+  <label for="length">Długość odpowiedzi:</label>
+  <select id="length">
+    <option value="krótka">Krótka ✏️</option>
+    <option value="długa">Długa 📚</option>
+  </select>
+
+  <label for="mode">Rodzaj pomocy:</label>
+  <select id="mode">
+    <option value="wytłumaczenie">🧠 Wytłumaczenie zagadnienia</option>
+    <option value="notatka">📓 Notatka</option>
+    <option value="rozwiązanie">✅ Rozwiązanie zadania</option>
+  </select>
+</div>
+
 
 
   <div id="answers"></div>
