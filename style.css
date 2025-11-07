@@ -154,6 +154,7 @@ button:hover {
 .options {
   margin-top: 15px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
