@@ -2,7 +2,7 @@ const questionInput = document.getElementById("prompt");
 const answersDiv = document.getElementById("answers");
 const bestDiv = document.getElementById("bestAnswer");
 
-const OPENROUTER_KEY = "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";
+const OPENROUTER_KEY = "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";
 const GEMINI_KEY = "AIzaSyCWzuYUbf5ePF4JSmTVLI3vUXrQetPC-K8";
 
 // ✅ Markdown + MathJax
@@ -165,3 +165,4 @@ Question: ${question}`;
     if (window.MathJax) MathJax.typesetPromise();
   };
 }
+
